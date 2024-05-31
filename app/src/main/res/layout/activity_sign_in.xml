@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:id="@+id/imageview_chat_to_row"
+        android:layout_width="match_parent"
+        android:layout_height="222dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/logo_hd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/IconUser"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/user_icon" />
+
+            <EditText
+                android:id="@+id/editTextSignInUserName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/imhyeminbold"
+                android:background="@drawable/rounded_edittext_register_login"
+                android:hint="이름"
+                android:paddingLeft="16dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/IconEmail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/email_icon2" />
+
+            <EditText
+                android:id="@+id/editTextSignInEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/imhyeminbold"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext_register_login"
+                android:hint="Email"
+                android:paddingLeft="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/IconPassword"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/password_icon3" />
+
+            <EditText
+                android:id="@+id/editTextSignInPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/imhyeminbold"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext_register_login"
+                android:hint="비밀번호 (최소 8자 이상)"
+                android:inputType="textPassword"
+                android:paddingLeft="16dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_btn"
+            android:text="회원 가입"
+            android:fontFamily="@font/imhyeminbold"
+            android:textColor="@color/black"
+            android:textStyle="bold"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>
